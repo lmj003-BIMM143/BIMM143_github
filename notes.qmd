@@ -1,0 +1,32 @@
+---
+title: "Notes on Git"
+format: html
+---
+
+## Using Git
+
+Git is a command line version control system. We can use it from RStudio (via the "git pane" in the upper right) or from the command line (i.e. in the "Terminal" tab)
+
+The steps to using git involve:
+
+1. Initiate a git repository
+  git init
+  or click the little box in RStudio
+
+2. Do your work
+  add files
+  edit files
+  save files
+  
+3. **Add files you care about to the "stage"**
+   git add yourfilename
+   click to add the "stage" in RStudio
+
+4. **Commit your changes**
+   git commit -m "your message"
+   click "commit" button in RStudio
+
+
+
+
+
