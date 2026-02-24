@@ -1,0 +1,85 @@
+---
+title: "Class06: Function Homework"
+author: "Leah Johnson"
+format: pdf
+---
+
+
+## My Own Function to Analyze Protein-Drug Interactions
+
+
+Write a function from the supplied code:
+```{r}
+# Can you improve this analysis code?
+library(bio3d)
+s1 <- read.pdb("4AKE") # kinase with drug
+s2 <- read.pdb("1AKE") # kinase no drug
+s3 <- read.pdb("1E4Y") # kinase with drug
+
+s1.chainA <- trim.pdb(s1, chain="A", elety="CA")
+s2.chainA <- trim.pdb(s2, chain="A", elety="CA")
+s3.chainA <- trim.pdb(s1, chain="A", elety="CA")
+
+s1.b <- s1.chainA$atom$b
+s2.b <- s2.chainA$atom$b
+s3.b <- s3.chainA$atom$b
+
+plotb3(s1.b, sse=s1.chainA, typ="l", ylab="Bfactor")
+plotb3(s2.b, sse=s2.chainA, typ="l", ylab="Bfactor")
+plotb3(s3.b, sse=s3.chainA, typ="l", ylab="Bfactor")
+```
+
+
+# Q6. "How would you generalize the original code above to work with any set of input protein structures?"
+
+
+> Q6. I began by inputing the "s1" or "4AKE" kinase with the drug into my function. I compared the new resulting plot to the original plot and obtained the same visual.
+
+
+```{r}
+protein_plot <- function(x, y, title="Protein Drug Interaction") {
+  s1 <- read.pdb("4AKE")
+  s1.chainA <- trim.pdb(s1, chain="A", elety="CA")
+  s1.b <- s1.chainA$atom$b
+  x=s1.b
+  y=s1.chainA
+}
+plot.bio3d(s1.b, sse=s1.chainA, xlab="Residue", ylab="B-Factor", typ="l")
+```
+
+I decided to try this function out with a different PDB code "6TPK" and referred to this PDB code as "s4"
+
+> I first needed to define "s4", "s4.chainA", and "s4.b" to store this data in the R "Environment"
+
+
+```{r}
+s4 <- read.pdb("6TPK")
+```
+
+
+```{r}
+s4.chainA <- trim.pdb(s4, chain="A", elety="CA")
+```
+
+
+```{r}
+s4.b <- s4.chainA$atom$b
+```
+
+
+I obtained a graph of the protein "6TPK" to be able to analyze protein-drug interaction.
+
+> Note: I removed the "sse=s4.chainA" information from the "plot.bio3d()" because it did not align properly with the other plot properties.
+
+
+```{r}
+protein_plot <- function(x, y, title="Protein Drug Interaction") {
+  s4 <- read.pdb("6TPK")
+  s4.chainA <- trim.pdb(s4, chain="A", elety="CA")
+  s4.b <- s4.chainA$atom$b
+  x=s4.b
+  y=s4.chainA
+}
+plot.bio3d(s4.b, xlab="Residue", ylab="B-Factor", typ="l")
+```
+
