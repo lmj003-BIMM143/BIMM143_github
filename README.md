@@ -15,35 +15,35 @@ Class 4 [Data Analysis with R](class4.1/class04.pdf)
 
 Class 5 [ggplot RMD](class5.1/class05.md)
 
-Class 6 [R functions](class6.1/)
+Class 6 [R functions](class6.1/class06.md)
 
-Class 7 [Machine Learning]()
+Class 7 [Machine Learning](class7.1/class07.md)
 
-Class 8 [Machine Learning Mini-Project]()
+Class 8 [Machine Learning Mini-Project](class8.1/class08_mini_project.md)
 
-Class 9 [Halloween Candy Mini-Project]()
+Class 9 [Halloween Candy Mini-Project](class9.1/class09_Candy_Mini-Project.md)
 
-Class 10 [Structural Bioinformatics pt1]()
+Class 10 [Structural Bioinformatics pt1](class10.1/Class10_Structural_Bioinformatics_1.md)
 
-Class 11 [Structural Bioinformatics pt2: AlphaFold]()
+Class 11 [Structural Bioinformatics pt2: AlphaFold](class11.1/class11_AlphaFold.md)
 
-Class 12(Online) [RNASeq Galaxy]()
+Class 12(Online) [RNASeq Galaxy](class12.1/class12_homework.rmd.pdf)
 
-Class 13 [DESeq, Transcriptomics, RNA-Seq Analysis, & Interpretation of Gene Lists]()
+Class 13 [DESeq, Transcriptomics, RNA-Seq Analysis, & Interpretation of Gene Lists](class13.1/class13.md)
 
-Class 14 [RNA-Seq Mini-Project]()
+Class 14 [RNA-Seq Mini-Project](class14.1/class14_MP.md)
 
-Class 15 [GitHub Repo]()
+Class 15 [GitHub Repo]
 
-Class 16 [UNIX Basics]()
+Class 16 [UNIX Basics](class16.1/unix_notes.md)
 
-Class 17 [Analyzing Sequencing Data in the Cloud]()
+Class 17 [Analyzing Sequencing Data in the Cloud](class17.1/class17_Analysis.pdf)
 
-Class 18 [Pertussis Resurgence Mini-Project]()
+Class 18 [Pertussis Resurgence Mini-Project](class18.1/class18_PertussisProject.md)
 
-Class 19 [Cancer Mutation Mini-Project]()
+Class 19 [Cancer Mutation Mini-Project](class19.1/class19_MiniProject.md)
 
-Class 20 [GitHub Pages Portfolio]()
+Class 20 [GitHub Pages Portfolio]
 
 
 
