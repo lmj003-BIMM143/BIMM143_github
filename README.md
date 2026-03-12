@@ -27,7 +27,7 @@ Class 10 [Structural Bioinformatics pt1](class10.1/Class10_Structural_Bioinforma
 
 Class 11 [Structural Bioinformatics pt2: AlphaFold](class11.1/class11_AlphaFold.md)
 
-Class 12(Online) [RNASeq Galaxy](class12.1/class12_homework.rmd.pdf)
+Class 12 (online) [RNASeq Galaxy](class12.1/class12_homework.rmd.pdf)
 
 Class 13 [DESeq, Transcriptomics, RNA-Seq Analysis, & Interpretation of Gene Lists](class13.1/class13.md)
 
