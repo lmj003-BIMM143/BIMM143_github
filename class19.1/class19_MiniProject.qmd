@@ -1,0 +1,38 @@
+---
+title: "class19_MiniProject"
+author: "Leah Johnson, PID: A17394690"
+format: html
+toc: true
+---
+
+From a BLASTp search against human refseq:
+Official symbol: MYC
+Official full name: MYC proto-oncogene protein isoform 1, bHLH transcription factor [Homo Sapiens]
+
+```{r}
+library(bio3d)
+
+fast_seq <- read.fasta("A17394690_mutant_seq.fa")
+fast_seq
+```
+
+
+We can score residue conservation then find the non 1.0 scoring positions. These will be the mutation positions.
+
+```{r,}
+conserv(seq)
+```
+
+```{r}
+mutation.sites <- which(conserv(seq)<1)
+```
+
+
+```{r}
+paste(fast_seq$ali[1,mutation.sites], 
+      mutation.sites, 
+      fast_seq$ali[2,mutation.sites])
+```
+
+
+

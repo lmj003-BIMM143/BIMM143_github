@@ -1,0 +1,148 @@
+---
+title: 'class12: Homework'
+author: 'Leah Johnson, PID: A17394690'
+date: "2026-02-15"
+output:
+  pdf_document: default
+  html_document: default
+toc: true
+---
+
+# Section 1. Proportion of G/G in a population
+
+Downloaded a CSV file from Ensemble < https://useast.ensembl.org/Homo_sapiens/Variation/Sample?db=core;r=17:39894595-39895595;v=rs8067378;vdb=variation;vf=959672880#373531_tablePanel >
+
+Here we read this CSV file:
+
+```{r}
+mxl <- read.csv("SampleGenotypes.csv")
+head(mxl)
+```
+
+
+```{r}
+table(mxl$Genotype..forward.strand.)
+```
+
+
+```{r}
+table(mxl$Genotype..forward.strand.) / nrow(mxl) * 100
+```
+
+
+Now let's look at a different population. I picked the GBR.
+
+```{r}
+gbr <- read.csv("SampleGenotypesGBR.csv")
+head(gbr)
+```
+
+
+Find proportion of G|G
+
+```{r}
+table(gbr$Genotype..forward.strand.)
+```
+
+
+```{r}
+round(table(gbr$Genotype..forward.strand.) / nrow(gbr) * 100, 2)
+```
+
+This variant that is associated with childhood asthma is more frequent in the GBR population than the MKL population.
+
+
+
+
+# Section 4: Population Scale Analysis [HOMEWORK]
+
+
+> **Q13**: Read this file into R and determine the sample size for each genotype and their
+corresponding median expression levels for each of these genotypes.
+
+
+How many samples do we have?
+
+```{r}
+expr <- read.table("rs8067378_ENSG00000172057.6.txt")
+head(expr)
+```
+
+
+There are 462 total individual samples in this data-set.
+
+```{r}
+nrow(expr)
+```
+
+
+There are 108 samples for A/A genotype, 233 samples for A/G genotype, and 121 samples for G/G genotype.
+
+```{r}
+table(expr$geno)
+```
+
+
+What are the median expression levels for each genotype?
+
+
+A/A median is 31.25.
+
+```{r}
+summary(expr$exp[expr$geno == "A/A"])
+```
+
+
+A/G median is 25.07.
+
+```{r}
+summary(expr$exp[expr$geno == "A/G"])
+```
+
+
+G/G median is 20.07.
+
+```{r}
+summary(expr$exp[expr$geno == "G/G"])
+```
+
+
+
+
+> **Q14**: Generate a boxplot with a box per genotype, what could you infer from the relative
+expression value between A/A and G/G displayed in this plot? Does the SNP effect the
+expression of ORMDL3?
+
+
+
+By looking at the plot, I can infer that there is less genome expression with the G/G genotype, as the calculated median expression is ~20.07 which is less than the calculated median genome expression with A/A genotype at ~31.82. Therefore, the SNP does effect the expression of ORMDL3 because the median genome expression levels differ by genotype differences amongst all samples considered in this data-set.
+
+
+
+```{r}
+library(ggplot2)
+
+```
+
+
+Let's make a boxplot:
+
+```{r}
+genome_ggplot <- ggplot(expr) + aes(x=geno, y=exp, fill=geno) + 
+  geom_boxplot(notch=TRUE)
+```
+
+
+```{r}
+ggplot(expr) + aes(x=geno, y=exp, fill=geno) + 
+  geom_boxplot(notch=TRUE)
+```
+
+
+
+
+
+
+
+
+
