@@ -44,7 +44,3 @@ Class 18 [Pertussis Resurgence Mini-Project](class18.1/class18_PertussisProject.
 Class 19 [Cancer Mutation Mini-Project](class19.1/class19_MiniProject.md)
 
 Class 20 [GitHub Pages Portfolio]
-
-
-
-
