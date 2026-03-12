@@ -20,11 +20,11 @@ fast_seq
 We can score residue conservation then find the non 1.0 scoring positions. These will be the mutation positions.
 
 ```{r,}
-conserv(seq)
+conserv(fast_seq)
 ```
 
 ```{r}
-mutation.sites <- which(conserv(seq)<1)
+mutation.sites <- which(conserv(fast_seq)<1)
 ```
 
 
