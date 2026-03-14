@@ -29,7 +29,7 @@ or [Structural Bioinformatics pt1(pdf)](class10.1/Class10_Structural_Bioinformat
 Class 11 [Structural Bioinformatics pt2: AlphaFold](class11.1/class11_AlphaFold.md)
 or [Structural Bioinformatics pt2(pdf): AlphaFold](class11.1/class11_AlphaFold.pdf)
 
-Class 12 (online) [RNASeq Galaxy_HW](class12.1/class12_homework.pdf)
+Class 12 (online) [RNASeq Galaxy HW](class12.1/class12_homework.pdf)
 or [RNASeq Galaxy](class12.1/lab12_galaxy.pdf)
 
 Class 13 [DESeq, Transcriptomics, RNA-Seq Analysis, & Interpretation of Gene Lists](class13.1/class13.md)
@@ -38,15 +38,15 @@ Class 14 [RNA-Seq Mini-Project](class14.1/class14_MP.md)
 
 Class 15 [GitHub Repo]
 
-Class 16 [UNIX_Notes](class16.1/unix_notes.md)
-or [HW_Unix_Basics](class16.1/class16_HW/HW8_unix_questions.pdf)
+Class 16 [UNIX Notes](class16.1/unix_notes.md)
+or [HW Unix Basics](class16.1/class16_HW/HW8_unix_questions.pdf)
 
 Class 17 [Analyzing Sequencing Data in the Cloud](class17.1/class17_Analysis.pdf)
 
 Class 18 [Pertussis Resurgence Mini-Project](class18.1/class18_PertussisProject.md)
 or [Pertussis Resurgence Mini-Project(pdf)](class18.1/class18_PertussisProject.pdf)
 
-Class 19 [Cancer Mutation Mini-Project_code](class19.1/class19_MiniProject.md)
+Class 19 [Cancer Mutation Mini-Project code](class19.1/class19_MiniProject.md)
 or [Cancer Mutation Mini-Project](class19.1/lab19.pdf)
 
 Class 20 [GitHub Pages Portfolio]
