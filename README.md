@@ -38,7 +38,7 @@ Class 14 [RNA-Seq Mini-Project](class14.1/class14_MP.md)
 
 Class 15 [GitHub Repo]
 
-Class 16 [UNIX Notes](class16.1/unix_notes.md)
+Class 16 [UNIX_Notes](class16.1/unix_notes.md)
 or [HW_Unix_Basics](class16.1/class16_HW/HW8_unix_questions.pdf)
 
 Class 17 [Analyzing Sequencing Data in the Cloud](class17.1/class17_Analysis.pdf)
